@@ -1,0 +1,63 @@
+{
+  "name": "@bedrock/token-query-coordinator",
+  "version": "0.0.1-0",
+  "type": "module",
+  "description": "Bedrock Token Query Coordinator",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/**/*.js",
+    "schemas/**/*.js"
+  ],
+  "scripts": {
+    "test": "cd test && npm run test",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-token-query-coordinator"
+  },
+  "keywords": [
+    "bedrock"
+  ],
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/bedrock-token-query-coordinator/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/bedrock-token-query-coordinator",
+  "directories": {
+    "lib": "./lib"
+  },
+  "devDependencies": {
+    "@digitalbazaar/eslint-config": "^9.0.0",
+    "eslint": "^10.6.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@digitalbazaar/ed25519-multikey": "^1.3.1",
+    "@digitalbazaar/ed25519-signature-2020": "^5.4.0",
+    "@digitalbazaar/ezcap-express": "^7.2.0",
+    "@digitalbazaar/lru-memoize": "^4.0.0",
+    "assert-plus": "^1.0.0",
+    "canonicalize": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@bedrock/app-identity": "^4.2.0",
+    "@bedrock/basic-authz-server": "^1.4.2",
+    "@bedrock/basic-authz-server-storage": "^1.1.0",
+    "@bedrock/core": "^6.3.0",
+    "@bedrock/did-context": "^6.0.0",
+    "@bedrock/did-io": "^10.5.0",
+    "@bedrock/express": "^8.6.0",
+    "@bedrock/mongodb": "^11.0.1",
+    "@bedrock/oauth2-verifier": "^2.4.0",
+    "@bedrock/security-context": "^9.0.0",
+    "@bedrock/validation": "^7.1.1",
+    "@bedrock/zcap-storage": "^9.7.0"
+  }
+}

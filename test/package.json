@@ -1,0 +1,45 @@
+{
+  "name": "@bedrock/token-query-coordinator-test",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --preserve-symlinks test.js test",
+    "coverage": "cross-env NODE_ENV=test c8 --reporter=lcov --reporter=text-summary npm test",
+    "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly npm test",
+    "coverage-report": "c8 report"
+  },
+  "dependencies": {
+    "@bedrock/app-identity": "^4.2.0",
+    "@bedrock/core": "^6.3.0",
+    "@bedrock/did-context": "^6.0.0",
+    "@bedrock/did-io": "^10.5.0",
+    "@bedrock/express": "^8.6.0",
+    "@bedrock/https-agent": "^4.1.0",
+    "@bedrock/mongodb": "^11.0.1",
+    "@bedrock/oauth2-verifier": "^2.4.0",
+    "@bedrock/security-context": "^9.0.0",
+    "@bedrock/server": "^5.1.0",
+    "@bedrock/test": "^9.0.0",
+    "@bedrock/token-query-coordinator": "file:..",
+    "@bedrock/validation": "^7.1.1",
+    "@bedrock/zcap-storage": "^9.7.0",
+    "@digitalbazaar/http-client": "^4.3.0",
+    "c8": "^11.0.0",
+    "cross-env": "^10.1.0"
+  },
+  "c8": {
+    "excludeNodeModules": false,
+    "include": [
+      "node_modules/@bedrock/token-query-coordinator/**"
+    ],
+    "exclude": [
+      "node_modules/@bedrock/token-query-coordinator/node_modules/**"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary",
+      "text"
+    ]
+  }
+}
