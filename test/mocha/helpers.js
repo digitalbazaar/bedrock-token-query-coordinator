@@ -29,7 +29,7 @@ export async function createMockTokenUser() {
   const {storage} = tokenizedDocuments;
   const tokenClient = new TokenClient({zcapClient, storage});
 
-  const query = async ({url, pairwiseToken, otherTokenClient, queryZcap}) => {
+  const query = async ({url, pairwiseToken, queryZcap}) => {
     const connectZcap = zcaps.rootTokenRequester;
     const result = await tokenClient.query({
       url, pairwiseToken, connectZcap, queryZcap
