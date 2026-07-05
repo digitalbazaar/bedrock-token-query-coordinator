@@ -4,7 +4,7 @@
 import * as bedrock from '@bedrock/core';
 import * as helpers from './helpers.js';
 
-describe('mocked tokenizer tests', () => {
+describe('token coordination tests', () => {
   describe('token clients', () => {
     let tokenUser1;
     let tokenUser2;
@@ -12,8 +12,8 @@ describe('mocked tokenizer tests', () => {
     let queryZcap;
     beforeEach(async () => {
       // create two token users
-      tokenUser1 = await helpers.createMockTokenUser();
-      tokenUser2 = await helpers.createMockTokenUser();
+      tokenUser1 = await helpers.createTokenUser();
+      tokenUser2 = await helpers.createTokenUser();
 
       // `tokenUser2` will respond to queries, so set HTTP API to use its
       // resolve zcap
