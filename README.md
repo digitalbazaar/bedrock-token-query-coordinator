@@ -22,14 +22,14 @@
 
 This module provides the core functionality for a **token query coordinator**:
 a service that lets two organizations discover that they hold records about the
-same person, without either one disclosing the record.
+same entity, without either one disclosing the record.
 
-The problem it solves is matching without disclosure. Two parties each hold
+One problem it solves is matching without disclosure. Two parties each hold
 identity records. Both tokenize their records against the same tokenizer
 service, which converts identity fields into cryptographic tokens. Identical
 input produces a matching token, so each side can ask the other a narrow
-question about a token rather than exchanging names, birth dates, or government
-identifiers.
+question about a token rather than exchanging other information, such as PII
+like names, birth dates, or government identifiers.
 
 Three terms matter:
 
