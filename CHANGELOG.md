@@ -1,6 +1,6 @@
 # bedrock-token-query-coordinator ChangeLog
 
-## 1.0.1 - 2026-11-dd
+## 1.0.1 - 2026-11-20
 
 ### Changed
 - Update dependencies.
